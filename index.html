@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PX Converter</title>
+  <link rel="icon" href="assets/img/logo.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header class="header">
+
+  </header>
+
+  <main class="main" id="main">
+
+    <!-- ======= Converter Section ======= -->
+    <section class="converter">
+      <div class="container cbox-container">
+        <div class="cbox">
+
+          <h2 class="cbox__title">Convert Px To Rem && Rem to Px <span>(root:16px)</span></h2>
+          <div class="cbox__content">
+            <label class="input-label" for="px">Px to Rem </label>
+            <input type="number" id="js-user-input-px" class="cbox__input" placeholder="Convert Px to Rem">
+            <div class="cbox__output">
+              <input type="text" id="js-converted-result-rem" class="cbox__result" placeholder="result">
+              <button class="btn btn-copy tooltip" id="js-copy-val" title="copy"><img src="assets/img/copy.svg" alt="">
+                <span class="tooltiptext" id="myTooltip">Copy</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="cbox__content">
+            <label class="input-label" for="rem">Rem to Px </label>
+            <input type="number" id="js-user-input-rem" class="cbox__input" placeholder="Convert Rem to Px">
+            <div class="cbox__output">
+              <input type="text" id="js-converted-result-px" class="cbox__result" placeholder="result">
+              <button class="btn btn-copy tooltip" id="js-copy-val" title="copy"><img src="assets/img/copy.svg" alt="">
+                <span class="tooltiptext" id="myTooltip">Copy</span>
+              </button>
+            </div>
+          </div>
+
+        </div> <!-- End cbox -->
+      </div> <!-- End Container  -->
+    </section>
+
+    <!-- ======= PX to REM Conversion Table ======= -->
+    <section class="conversion-table section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>PX to REM Conversion Table</h2>
+          <p>These are the mostly used px to rem sizes. This is considering that your base font (font-size) is 16px. You
+            can
+            also use the converter above.</p>
+        </div>
+
+        <table>
+          <thead>
+            <tr>
+              <th>PX</th>
+              <th>REM</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>4px</td>
+              <td>0.25rem</td>
+            </tr>
+            <tr>
+              <td>8px</td>
+              <td>0.5rem</td>
+            </tr>
+            <tr>
+              <td>12px</td>
+              <td>0.75rem</td>
+            </tr>
+            <tr>
+              <td>16px</td>
+              <td>1rem</td>
+            </tr>
+            <tr>
+              <td>20px</td>
+              <td>1.25rem</td>
+            </tr>
+            <tr>
+              <td>24px</td>
+              <td>1.5rem</td>
+            </tr>
+            <tr>
+              <td>32px</td>
+              <td>2rem</td>
+            </tr>
+            <tr>
+              <td>40px</td>
+              <td>2.5rem</td>
+            </tr>
+            <tr>
+              <td>48px</td>
+              <td>3rem</td>
+            </tr>
+            <tr>
+              <td>64px</td>
+              <td>4rem</td>
+            </tr>
+            <tr>
+              <td>96px</td>
+              <td>6rem</td>
+            </tr>
+            <tr>
+              <td>128px</td>
+              <td>8rem</td>
+            </tr>
+            <tr>
+              <td>160px</td>
+              <td>10rem</td>
+            </tr>
+            <tr>
+              <td>176px</td>
+              <td>11rem</td>
+            </tr>
+            <tr>
+              <td>192px</td>
+              <td>12rem</td>
+            </tr>
+            <tr>
+              <td>208px</td>
+              <td>13rem</td>
+            </tr>
+            <tr>
+              <td>224px</td>
+              <td>14rem</td>
+            </tr>
+            <tr>
+              <td>256px</td>
+              <td>16rem</td>
+            </tr>
+            <tr>
+              <td>320px</td>
+              <td>20rem</td>
+            </tr>
+            <tr>
+              <td>480px</td>
+              <td>30rem</td>
+            </tr>
+            <tr>
+              <td>576px</td>
+              <td>36rem</td>
+            </tr>
+            <tr>
+              <td>768px</td>
+              <td>48rem</td>
+            </tr>
+            <tr>
+              <td>800px</td>
+              <td>50rem</td>
+            </tr>
+            <tr>
+              <td>960px</td>
+              <td>60rem</td>
+            </tr>
+            <tr>
+              <td>992px</td>
+              <td>62rem</td>
+            </tr>
+            <tr>
+              <td>1024px</td>
+              <td>64rem</td>
+            </tr>
+            <tr>
+              <td>1120px</td>
+              <td>70rem</td>
+            </tr>
+            <tr>
+              <td>1200px</td>
+              <td>75rem</td>
+            </tr>
+            <tr>
+              <td>1280px</td>
+              <td>80rem</td>
+            </tr>
+            <tr>
+              <td>1440px</td>
+              <td>90rem</td>
+            </tr>
+            <tr>
+              <td>1600px</td>
+              <td>100rem</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+    </section> <!-- End Conversion tabel -->
+
+    <!-- ======= Conversion Tips ======= -->
+    <section class="coversion-tips">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Conversion tips</h2>
+          <p>You can convert now Personally. WOW!</p>
+        </div>
+
+        <!-- Code as it is -->
+        <pre class="code-box">
+         <code class="code-content">
+  html,
+  body {
+      font-size: 16px;
+      /* This is Root font-size */
+  }
+
+  p {
+      font-size: 18px;
+  }
+
+  p {
+      font-size: px / root-font-size;  /* This is Constructor */
+  }
+
+  p {
+      font-size: 1.125rem;
+      /* same as 18px */
+  }
+         </code>
+       </pre>
+      </div>
+    </section> <!-- End Conversion Tips -->
+
+  </main> <!-- End Main -->
+
+  <!-- ======= Footer ======= -->
+  <footer class="footer">
+    <div class="container">
+
+      <!-- footer copyRight -->
+      <div class="copy-right">
+        <span>&copy; <span id="copyright-date"></span> | mahidahmod</span>
+      </div>
+
+    </div>
+
+
+  </footer> <!-- End Footer -->
+
+
+  <!-- ======= Preloader ======= -->
+  <div class="preloader" id="preloader"></div>
+
+  <!-- app main js file -->
+  <script src="assets/js/app.js"></script>
+
+  <!--  PX Converter main html file v-1.0 
+   @mahidahmod.
+   -->
+
+</body>
+
+</html>

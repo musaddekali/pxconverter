@@ -1,0 +1,340 @@
+  /* PX Converter main css file v-1.0 
+ ContactMe - mdmahidahmod@gmail.com
+*/
+
+  /* All Style  Here  */
+
+  /*--------------------------------------------------------------
+    Gloval Style 
+--------------------------------------------------------------*/
+  :root {
+      --g-color: -webkit-linear-gradient(-70deg, #db469f, #2188ff);
+  }
+
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  body {
+      font-family: "Roboto", sans-serif;
+  }
+
+  a {
+      text-decoration: none;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+      font-family: "Roboto", sans-serif;
+      color: #444;
+  }
+
+  .container {
+      max-width: 71.25rem;
+      /* 1140px */
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  @media (max-width: 576px) {
+      .container {
+          margin: 0;
+      }
+  }
+
+  /*--------------------------------------------------------------
+   Section General
+--------------------------------------------------------------*/
+  section {
+      padding: 2.5rem 0;
+  }
+
+  .section-title {
+      text-align: center;
+      padding-bottom: 30px;
+  }
+
+  .section-title h2 {
+      font-size: 1.875rem;
+      display: inline-block;
+      font-weight: 700;
+      margin-bottom: 1.25rem;
+      background: var(--g-color);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+  }
+
+  .section-bg {
+      background: #f3f8fa;
+  }
+
+  p {
+      margin-bottom: 1rem;
+  }
+
+  /*--------------------------------------------------------------
+    For HTML Code style in browser { Specially <pre> and <code> tag }
+--------------------------------------------------------------*/
+  .code-box {
+      background: #11032b;
+      color: #2bbd2b;
+      overflow-x: auto;
+      padding: .3125rem 1.25rem;
+  }
+
+  .code-content {
+      font-size: .875rem;
+  }
+
+  /* End pre and code style */
+
+
+  /*--------------------------------------------------------------
+    Preloader
+--------------------------------------------------------------*/
+  .preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 9999;
+      overflow: hidden;
+      background: #ffffffe8;
+  }
+
+  .preloader:before {
+      content: "";
+      position: fixed;
+      top: calc(50% - 30px);
+      left: calc(50% - 30px);
+      border: .375rem solid #106eea;
+      border-top-color: #e2eefd;
+      border-radius: 50%;
+      width: 3.75rem;
+      height: 3.75rem;
+      -webkit-animation: animate-preloader 1s linear infinite;
+      animation: animate-preloader 1s linear infinite;
+  }
+
+  @-webkit-keyframes animate-preloader {
+      0% {
+          transform: rotate(0deg);
+      }
+
+      100% {
+          transform: rotate(360deg);
+      }
+  }
+
+  @keyframes animate-preloader {
+      0% {
+          transform: rotate(0deg);
+      }
+
+      100% {
+          transform: rotate(360deg);
+      }
+  }
+
+
+
+  /*--------------------------------------------------------------
+   Converter
+--------------------------------------------------------------*/
+  .cbox {
+      width: 80vw;
+      height: 16.875rem;
+      padding: 1rem;
+      background: linear-gradient(-70deg, #9a0e62, #2188ff);
+      margin: 1.25rem 0.625rem;
+      box-shadow: 0 4px 15px rgb(0 0 0 / 46%);
+      color: #fff;
+      border-radius: 0.3125rem;
+      overflow-y: auto;
+  }
+
+  .cbox-container {
+      display: flex;
+      justify-content: center;
+  }
+
+  .cbox__content {
+      margin: 0.625rem 0 1.25rem 0;
+  }
+
+  .cbox__title {
+      font-family: roboto;
+      font-weight: 700;
+      margin-bottom: 1.875rem;
+      display: block;
+      text-align: center;
+      font-size: 1.5rem;
+      background: -webkit-linear-gradient(-70deg, #e6aed0, #aacaef);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+  }
+
+  .cbox .input-label {
+      display: block;
+      margin-bottom: 0.3125rem;
+      text-transform: capitalize;
+  }
+
+  .cbox__input {
+      padding: 0.625rem 1.25rem;
+      width: 50%;
+      border: 1px solid dodgerblue;
+      border-radius: 0.1875rem;
+      outline: none;
+      font-size: 0.875rem;
+      float: left;
+  }
+
+  .cbox__result {
+      display: inline-block;
+      font-size: 1rem;
+      font-family: roboto;
+      width: 75%;
+      padding: .5rem 1.25rem;
+      background: transparent;
+      border: none;
+      outline: none;
+      color: #fff;
+  }
+
+  .cbox__result::placeholder {
+      color: #fff;
+      opacity: 0.6;
+  }
+
+  .cbox__output {
+      width: 50%;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+  }
+
+  .btn {
+      border: none;
+      padding: 0.25rem;
+      font-size: 0.875rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: .2rem;
+      cursor: pointer;
+  }
+
+  .btn-copy img {
+      width: 0.875rem;
+  }
+
+  /*--------------------------------------------------------------
+   Tooltip
+--------------------------------------------------------------*/
+  .tooltip {
+      position: relative;
+  }
+
+  .tooltip .tooltiptext {
+      visibility: hidden;
+      width: 3.875rem;
+      background-color: black;
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      padding: 5px 0;
+      position: absolute;
+      z-index: 1;
+      bottom: 130%;
+      left: 180%;
+      margin-left: -60px;
+      opacity: 0;
+      transition: opacity 1s;
+  }
+
+  .tooltip .tooltiptext::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: black transparent transparent transparent;
+  }
+
+  .tooltip:hover .tooltiptext {
+      visibility: visible;
+      opacity: 1;
+  }
+
+  /*--------------------------------------------------------------
+   Conversion Tabel
+--------------------------------------------------------------*/
+  .conversion-table table {
+      border: 1px solid #ced4da;
+      border-collapse: collapse;
+      width: 100%;
+  }
+
+  .conversion-table td,
+  .conversion-table th {
+      border: 1px solid #ced4da;
+      border-collapse: collapse;
+      padding: 8px 16px;
+      width: 50%;
+  }
+
+
+  /*--------------------------------------------------------------
+   Footer
+--------------------------------------------------------------*/
+  .footer {
+      padding: 0 0 1.875rem 0;
+      background: var(--g-color);
+  }
+
+  .copy-right {
+      text-align: center;
+      color: #fff;
+      padding-top: 1.875rem;
+  }
+
+
+  /*--------------------------------------------------------------
+   @Responsive
+--------------------------------------------------------------*/
+  @media (max-width: 768px) {
+      .cbox__title {
+          font-size: 1.25rem;
+      }
+
+      .cbox {
+          width: 100vw;
+          height: 80vh;
+      }
+
+      .cbox__input {
+          width: 100%;
+          margin-bottom: 0.625rem;
+      }
+
+      .cbox__output {
+          width: 100%;
+      }
+  }
+
+
+  /* End the style  */
